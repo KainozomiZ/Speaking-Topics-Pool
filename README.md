@@ -11,4 +11,4 @@ A lightweight IELTS Speaking practice tool that randomly draws a Part 2 topic an
 - Responsive phone and desktop layouts
 - Keyboard shortcuts: `N` for next topic, `Enter`/`Space` to reveal, and `Ctrl/Cmd + Z` to undo
 
-The initial version contains 12 demonstration topics. Add and edit topics in the clearly labelled `topics.js` file; categories are generated automatically.
+The pool contains 108 paired Part 2 and Part 3 practice topics across eight topic families. Add and edit topics in the clearly labelled `topics.js` file; categories are generated automatically.
