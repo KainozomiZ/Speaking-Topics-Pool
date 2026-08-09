@@ -9,6 +9,10 @@
     .header-actions{display:flex;align-items:center;gap:20px}.category-group{margin-top:30px}.category-title{display:flex;justify-content:space-between;align-items:end;padding-bottom:9px;border-bottom:1px solid var(--mint);color:var(--mint);font-size:11px;text-transform:uppercase;letter-spacing:.14em}.category-title b{font-size:10px}.status{width:23px;height:23px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;color:transparent}.status.done{border-color:var(--mint);background:var(--mint);color:var(--deep)}.list .topic-row{grid-template-columns:28px 24px 1fr}.modal-actions{display:flex;justify-content:space-between;align-items:center;margin-top:25px;padding-top:20px;border-top:1px solid var(--line)}.danger{border:1px solid var(--line);background:transparent;padding:10px 14px;cursor:pointer;color:var(--muted)}.danger:hover{border-color:var(--ink);color:var(--ink)}
     @media(max-width:760px){.workspace{padding-top:38px}.intro{grid-template-columns:1fr;gap:24px}.toolbar{grid-template-columns:1fr auto}.progress{grid-column:1/-1;grid-row:2}.grid{grid-template-columns:1fr}.card{min-height:auto}.part3{min-height:390px}.topbar{height:64px}.header-actions{gap:8px}.plain{font-size:12px}footer span:last-child{display:none}}@media(max-width:480px){.workspace{width:94vw}.toolbar{gap:12px}.history button:nth-child(-n+2){display:none}.card{padding:20px}.part2 h2{font-size:31px}.next p{display:none}.next .primary{width:100%;justify-content:space-between}.plain b{display:none}}
   </style>
+  <style>
+    select option { background: #f4f1e8; color: #10221c; }
+    select option:checked { background: #c9ff68; color: #0b1915; }
+  </style>
 </head>
 <body>
 <header class="topbar"><div class="brand"><span class="mark">2→3</span>IELTS Topic Draw</div><div class="header-actions"><button class="plain" id="practisedBtn">Practised <b id="practisedCount">0</b></button><button class="plain" id="poolBtn">Topic pool <b id="poolCount"></b></button></div></header>
