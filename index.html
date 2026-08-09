@@ -13,6 +13,11 @@
     select option { background: #f4f1e8; color: #10221c; }
     select option:checked { background: #c9ff68; color: #0b1915; }
   </style>
+  <style>
+    .list .topic-row { grid-template-columns: 28px minmax(0, 1fr); gap: 12px; }
+    .list .topic-row b { min-width: 0; line-height: 1.35; overflow-wrap: normal; word-break: normal; }
+    .category-title { gap: 18px; }
+  </style>
 </head>
 <body>
 <header class="topbar"><div class="brand"><span class="mark">2→3</span>IELTS Topic Draw</div><div class="header-actions"><button class="plain" id="practisedBtn">Practised <b id="practisedCount">0</b></button><button class="plain" id="poolBtn">Topic pool <b id="poolCount"></b></button></div></header>
