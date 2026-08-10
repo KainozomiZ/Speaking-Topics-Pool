@@ -1,3 +1,8 @@
+9:    .header-actions{display:flex;align-items:center;gap:20px}.category-group{margin-top:30px}.category-title{display:flex;justify-content:space-between;align-items:end;padding-bottom:9px;border-bottom:1px solid var(--mint);color:var(--mint);font-size:11px;text-transform:uppercase;letter-spacing:.14em}.category-title b{font-size:10px}.status{width:23px;height:23px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;color:transparent}.status.done{border-color:var(--mint);background:var(--mint);color:var(--deep)}.list .topic-row{grid-template-columns:28px 24px 1fr}.modal-actions{display:flex;justify-content:space-between;align-items:center;margin-top:25px;padding-top:20px;border-top:1px solid var(--line)}.danger{border:1px solid var(--line);background:transparent;padding:10px 14px;cursor:pointer;color:var(--muted)}.danger:hover{border-color:var(--ink);color:var(--ink)}
+25:    .category-title{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:10px 24px}
+26:    .category-title>span{min-width:0;line-height:1.4;overflow-wrap:normal;word-break:normal}
+27:    .category-title>b{justify-self:end;white-space:nowrap;font:800 10px/1 Arial;letter-spacing:.12em}
+40:    @media(max-width:420px){.category-title{grid-template-columns:1fr;gap:5px}.category-title>b{justify-self:start}}
 <!doctype html>
 <html lang="en">
 <head>
@@ -22,7 +27,9 @@
     .review-banner{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-top:28px;padding:14px 18px;background:var(--mint);color:var(--deep)}
     .review-banner p{margin:0;font-size:13px;line-height:1.4}.review-banner b{display:block;font-size:15px}
     .review-banner button{flex:0 0 auto;border:1px solid var(--deep);background:var(--deep);color:var(--mint);padding:10px 14px;font-weight:750;cursor:pointer}
-    .category-title { gap: 18px; }
+    .category-title{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:10px 24px}
+    .category-title>span{min-width:0;line-height:1.4;overflow-wrap:normal;word-break:normal}
+    .category-title>b{justify-self:end;white-space:nowrap;font:800 10px/1 Arial;letter-spacing:.12em}
     .student-bar{display:flex;align-items:center;gap:14px;margin-bottom:30px;padding:14px 18px;border:1px solid var(--line);background:var(--white)}
     .student-bar label{min-width:220px}.student-bar select{width:100%;color:var(--ink)}
     .student-bar .rename{border:1px solid var(--line);background:transparent;padding:10px 14px;cursor:pointer;font-weight:700}
@@ -35,6 +42,7 @@
     .rename-dialog input:focus{border-color:var(--mint)}.rename-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:20px}
     .rename-actions button{padding:11px 16px;cursor:pointer;font-weight:750}.cancel-rename{border:1px solid var(--line);background:transparent}.save-rename{border:1px solid var(--mint);background:var(--mint);color:var(--deep)}
     @media(max-width:760px){.student-bar{flex-wrap:wrap}.student-bar label{flex:1;min-width:180px}.student-bar .student-note{width:100%;margin-left:0}.review-banner{align-items:flex-start;flex-direction:column}.review-banner button{width:100%}}
+    @media(max-width:420px){.category-title{grid-template-columns:1fr;gap:5px}.category-title>b{justify-self:start}}
   </style>
 </head>
 <body>
